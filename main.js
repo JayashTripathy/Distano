@@ -19,7 +19,7 @@ function onOrientationCange(event) {
   ANGLE = event.alpha;
   const offset = -Math.PI/2;
   const fixedAngle= (ANGLE - ANGLE_TO_REFERENCE_POINT) * Math.PI/ 180 + offset;
-  const rad = Math.min(CANVAS.width, CANVAS.height) * 0.25;
+  const rad = Math.min(CANVAS.width, CANVAS.height) * 0.35;
 
   const movingTip = {
     x: CANVAS.width / 2 +  Math.cos(fixedAngle)*rad,
