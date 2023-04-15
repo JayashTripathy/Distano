@@ -15,9 +15,10 @@ function main() {
 }
 
 function onOrientationCange(event) {
-  const offSet = Math.PI/2;
-  const fixedAngle = (ANGLE * Math.PI) / 180 + offSet;
   ANGLE = event.alpha;
+  const offSet = Math.PI/2;
+  const fixedAngle = ANGLE * Math.PI/ 180 + offSet
+  ;
   const rad = Math.min(CANVAS.width, CANVAS.height) * 0.25;
 
   const ctx = CANVAS.getContext("2d");
