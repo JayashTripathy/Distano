@@ -1,17 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+
 body{
-    
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
     padding: 0;
     margin: 0;
     overflow: hidden;
     background-color: rgb(15, 15, 15);
     position: relative;
-    height: 100vh;
+    height: 100vh;   
     width: 100vw;
     display: flex;
     align-items: center;
     flex-direction: column;
     
-  
+    
     justify-content: space-between;
 
   
@@ -19,7 +22,7 @@ body{
    
 }
 #mainCanvas{
-    margin-top: 1rem;
+    margin-top: 10rem;
     
 }
 
@@ -54,12 +57,13 @@ body{
     position: relative;
     display: block;
     text-align: center;
-    font-size: 3em;
+    font-size: 2.5em;
     color: #999;
-    font-weight: 400;
+    font-weight: 900;
+    line-height: 3rem;
   }
   .range {
-    width: 300px;
+    width: 250px;
     height: 15px;
     
     background: black;
@@ -98,5 +102,15 @@ body{
    .controls{
     display: flex;
     flex-direction: column;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+   }
+
+   .distanceFrRe{
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: regular;
+    font-size: .8rem;
    }
