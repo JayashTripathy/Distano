@@ -21,8 +21,24 @@ body{
     
    
 }
+
+.logo-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  flex-direction: column;
+  
+}
+.logo-container  div {
+  color: white;
+  font-size: .85rem;
+  padding-top: .5rem;
+  color: rgb(255, 206, 116);
+
+}
 #mainCanvas{
-    margin-top: 12rem;
+    margin-top: 3rem;
     
 }
 

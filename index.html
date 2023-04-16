@@ -2,25 +2,29 @@
 <html lang="en">
 
 <head>
- 
-    <meta name="viewport" content="initial-scale=1.0, width=device-width"></meta>
+
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    </meta>
     <title>Distano</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
 </head>
 
 <body onload="main()">
-
+    <div class="logo-container">
+        <img  width="50%" src="./assets//distano.png" alt="" srcset="">
+        <div>easy distance estimation</div>
+    </div>
     <canvas id="mainCanvas"></canvas>
     <div class="controls">
 
         <div class="rangeContainer">
-            
+
             <span id="rangeValue">0m</span>
             <Input class="range" type="range" name "" id="rangeSlider" value="0" min="0" max="50"
-            onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
-            
-            <span class="distanceFrRe">distance from reference point</span>    
+                onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
+
+            <span class="distanceFrRe">distance from reference point</span>
         </div>
         <button onclick="reset()" id="resetAngle"> Reset Origin</button>
     </div>
