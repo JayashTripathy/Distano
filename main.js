@@ -8,8 +8,8 @@ let distanceTotarget;
 function main() {
   CANVAS = document.getElementById("mainCanvas");
 
-     CANVAS.width = 400;
-  CANVAS.height = 400;
+     CANVAS.width = 300;
+  CANVAS.height = 300;
 
 
   window.addEventListener("deviceorientation", onOrientationCange);
