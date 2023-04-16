@@ -12,11 +12,12 @@ body{
     width: 100vw;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
+    gap: 6rem;
     
     
-    justify-content: space-between;
-
+   
   
     
    
@@ -118,12 +119,12 @@ body{
    .controls{
     display: flex;
     flex-direction: column;
-    margin-bottom: 3rem;
+   
     background-color: black;
     padding: 1.5rem;
     border-radius: 1rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-
+    margin-bottom: 2rem;
    }
 
    .distanceFrRe{
