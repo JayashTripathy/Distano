@@ -12,14 +12,17 @@
 <body onload="main()">
 
     <canvas id="mainCanvas"></canvas>
-    <button onclick="reset()" id="resetAngle"> Reset Origin</button>
-    <div class="rangeContainer">
+    <div class="controls">
 
-        <span id="rangeValue">0m</span>
-        <Input class="range" type="range" name "" id="rangeSlider" value="0" min="0" max="50"
+        <div class="rangeContainer">
+            
+            <span id="rangeValue">0m</span>
+            <Input class="range" type="range" name "" id="rangeSlider" value="0" min="0" max="50"
             onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
-
-        <span id="result"></span>    
+            
+            <span id="result"></span>    
+        </div>
+        <button onclick="reset()" id="resetAngle"> Reset Origin</button>
     </div>
 
 </body>

@@ -8,10 +8,9 @@ let distanceTotarget;
 function main() {
   CANVAS = document.getElementById("mainCanvas");
 
-     CANVAS.width = window.innerWidth;
-  CANVAS.height = window.innerHeight;
+     CANVAS.width = 300;
+  CANVAS.height = 300;
 
- 
 
   window.addEventListener("deviceorientation", onOrientationCange);
 }
@@ -20,7 +19,7 @@ function onOrientationCange(event) {
   ANGLE = event.alpha;
   const offset = -Math.PI/2;
   const fixedAngle= (ANGLE - ANGLE_TO_REFERENCE_POINT) * Math.PI/ 180 + offset;
-  const rad = Math.min(CANVAS.width, CANVAS.height) * 0.35;
+  const rad = Math.min(CANVAS.width, CANVAS.height) * 0.5;
 
   const movingTip = {
     x: CANVAS.width / 2 +  Math.cos(fixedAngle)*rad,
@@ -29,9 +28,11 @@ function onOrientationCange(event) {
 
 
   const distToReference = document.getElementById("rangeSlider").value;
+  console.log(distToReference);
+  document.getElementById('rangeValue').innerHTML = distToReference + "m";
   
   
-  distanceTotarget =Math.abs( Math.tan(fixedAngle - offset)) * distToReference;
+  distanceTotarget = Math.abs( Math.tan(fixedAngle - offset)) * distToReference;
 
 
 
@@ -82,6 +83,6 @@ function reset() {
 }
 
 
-function rangeSlide(value) {
-  document.getElementById('rangeValue').innerHTML = value + "m";
-}
+// function rangeSlide(value) {
+//   document.getElementById('rangeValue').innerHTML = value + "m";
+// }
